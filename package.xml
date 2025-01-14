@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>CBDSubsciption_App</members>
-        <members>RMA_Integration</members>
-        <members>RMA_Integration1</members>
-        <name>ConnectedApp</name>
+        <members>Book__c</members>
+        <members>Company__c</members>
+        <members>Contact_Record</members>
+        <members>Customer__c</members>
+        <members>Employee__c</members>
+        <members>Error_Log__c</members>
+        <members>FeedbackForm__c</members>
+        <members>Hello</members>
+        <members>Invoice__c</members>
+        <members>LWC_Learning</members>
+        <members>LWC_Learning_1</members>
+        <members>MyCustomObject__c</members>
+        <members>Offer__c</members>
+        <members>Property__c</members>
+        <members>Record_Manage</members>
+        <members>Renewal_Reminder</members>
+        <members>Student__c</members>
+        <members>Task_1</members>
+        <members>Task_2</members>
+        <members>Teacher_Student_Junction__c</members>
+        <members>Teacher__c</members>
+        <members>company_branch__c</members>
+        <members>exampleLWC</members>
+        <members>sc</members>
+        <name>CustomTab</name>
     </types>
     <version>56.0</version>
 </Package>
