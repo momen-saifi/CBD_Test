@@ -1,0 +1,8 @@
+.slds-modal__container {
+    width: 50%; /* Adjust the width of the modal */
+    max-width: 40rem; /* Limit the maximum width */
+}
+
+.slds-backdrop_open {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}

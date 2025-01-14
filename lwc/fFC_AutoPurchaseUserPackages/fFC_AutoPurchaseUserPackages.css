@@ -1,0 +1,33 @@
+/* .slds-table th.my-custom-class:focus,
+.slds-table th.my-custom-class.slds-has-focus,
+.slds-table [role=gridcell].my-custom-class:focus,
+.slds-table [role=gridcell].my-custom-class.slds-has-focus {
+    box-shadow: 0 0 100px #ffffff !important;
+    outline: none !important;
+}
+
+.my-custom-class{
+    box-shadow: 0 0 100px #ffffff !important;
+    outline: none !important;
+}
+
+.slds-table th.my-custom-class,
+.slds-table [role=gridcell].my-custom-class {
+    pointer-events: none;
+    box-shadow: 0 0 3px #ffffff !important;
+}
+
+
+ .slds-table th.my-custom-class:focus, .slds-table th.my-custom-class.slds-has-focus, .slds-table [role=gridcell].my-custom-class:focus, .slds-table [role=gridcell].my-custom-class.slds-has-focus {
+    box-shadow: 0 0 3px #ffffff !important;
+} 
+
+.slds-table th:focus, .slds-table th.slds-has-focus, .slds-table [role=gridcell]:focus, .slds-table [role=gridcell].slds-has-focus {
+    box-shadow: 0 0 3px #ffffff !important;
+} */
+
+/* .my-custom-class {
+    box-shadow: none !important;
+    border: none !important; 
+    pointer-events: none; 
+} */

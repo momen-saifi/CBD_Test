@@ -1,0 +1,63 @@
+<template>
+    <lightning-card title="Auto Purchase User Packages">
+        <lightning-datatable
+            key-field="ConsumerRechargeId"
+            data={usageResponseData}
+            columns={columns}
+            hide-checkbox-column="true"
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+
+        <!-- Modal for viewing package details -->
+        <template if:true={isModalOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading" aria-modal="true">
+                <div>
+                    <header>
+                        <h2 id="modal-heading">Package Details</h2>
+                    </header>
+                    <div>
+                        <p>Package Id: {selectedRowUsageDetailData.PackageId}</p>
+                        <p>Units: {selectedRowUsageDetailData.Units}</p>
+                    </div>
+                    <footer>
+                        <lightning-button label="Close" onclick={closeModal}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+        </template>
+
+        <!-- Modal for editing package -->
+        <template if:true={isEditModalOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="edit-modal-heading" aria-modal="true">
+                <div>
+                    <header>
+                        <h2 id="edit-modal-heading">Edit Auto Purchase</h2>
+                    </header>
+                    <div>
+                        <p>Editing Auto Purchase details...</p>
+                    </div>
+                    <footer>
+                        <lightning-button label="Close" onclick={closeEditModal}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+        </template>
+
+        <!-- Modal for canceling package -->
+        <template if:true={isCancelModalOpen}>
+            <section role="dialog" tabindex="-1" aria-labelledby="cancel-modal-heading" aria-modal="true">
+                <div>
+                    <header>
+                        <h2 id="cancel-modal-heading">Cancel Auto Purchase</h2>
+                    </header>
+                    <div>
+                        <p>Cancelling Auto Purchase...</p>
+                    </div>
+                    <footer>
+                        <lightning-button label="Close" onclick={closeCancelModal}></lightning-button>
+                    </footer>
+                </div>
+            </section>
+        </template>
+    </lightning-card>
+</template>
