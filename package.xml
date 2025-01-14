@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>de</members>
-        <members>en_US</members>
-        <members>es_MX</members>
-        <members>fr</members>
-        <members>ja</members>
-        <members>ko</members>
-        <members>pt_BR</members>
-        <members>zh_CN</members>
-        <name>Translations</name>
+        <members>ExperienceCloudeImage</members>
+        <members>SK_DataTableResources</members>
+        <members>SiteSamples</members>
+        <members>dataTablesMinJS</members>
+        <members>dataTablesSelectMin</members>
+        <members>excelExportJs</members>
+        <members>images</members>
+        <members>jQuery35</members>
+        <members>jquerydataTablesCSS</members>
+        <members>leaflet</members>
+        <members>otherAccountData</members>
+        <members>sample_data_brokers</members>
+        <members>sample_data_contacts</members>
+        <members>sample_data_properties</members>
+        <members>selectdataTablesCSS</members>
+        <name>StaticResource</name>
     </types>
     <version>56.0</version>
 </Package>
