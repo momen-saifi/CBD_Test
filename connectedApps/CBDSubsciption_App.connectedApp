@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>momensaifi02@gmail.com</contactEmail>
+    <label>CBDSubsciption App</label>
+    <oauthConfig>
+        <callbackUrl>https://oraqosoft7-dev-ed.develop.my.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9GCMQoQ6rpzRe.V.cEI9gHaj4ciuTfPNe3Vs1omqG5zXpfcm5Y3JrTCImjKbyKou_J5Pu4tevOJSD09uw</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

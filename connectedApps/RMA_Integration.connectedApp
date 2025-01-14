@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>momensaifi02@gmail.com</contactEmail>
+    <label>RMA Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://oraqosoft7-dev-ed.develop.my.salesforce.com/apex/CBD__OauthDemoRedirection</callbackUrl>
+        <consumerKey>3MVG9GCMQoQ6rpzRe.V.cEI9gHZIjz1as0O3FiPB6aBz7cmCeik7cgJbu5A2hFO0ssOaVu0JH4sxOB__JTnks</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
