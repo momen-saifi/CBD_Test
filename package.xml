@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>AnswersHome</members>
-        <members>BandwidthExceeded</members>
-        <members>ChangePassword</members>
-        <members>CommunitiesLanding</members>
-        <members>CommunitiesLogin</members>
-        <members>CommunitiesSelfReg</members>
-        <members>CommunitiesSelfRegConfirm</members>
-        <members>CommunitiesTemplate</members>
-        <members>Exception</members>
-        <members>FileNotFound</members>
-        <members>ForgotPassword</members>
-        <members>ForgotPasswordConfirm</members>
-        <members>IdeasHome</members>
-        <members>InMaintenance</members>
-        <members>MicrobatchSelfReg</members>
-        <members>MyProfilePage</members>
-        <members>SK_SetUpAuditTrailVFPage</members>
-        <members>SiteLogin</members>
-        <members>SiteRegister</members>
-        <members>SiteRegisterConfirm</members>
-        <members>SiteTemplate</members>
-        <members>StationCheck</members>
-        <members>StdExceptionTemplate</members>
-        <members>Unauthorized</members>
-        <members>UnderConstruction</members>
-        <name>ApexPage</name>
+        <members>AccountAddressTrigger</members>
+        <members>AccountTrigger</members>
+        <members>AccountTrigger1</members>
+        <members>AccountTriggerS</members>
+        <members>AccountsTrigger</members>
+        <members>CaseTrigger</members>
+        <members>ClosedOpportunityTrigger</members>
+        <members>ContactTrigger</members>
+        <members>ContactTriggerS</members>
+        <members>ExampleTrigger</members>
+        <members>HelloWorldTrigger</members>
+        <members>LeadTrigger</members>
+        <members>OpportunityTrigger</members>
+        <members>OpportunityTriggerS</members>
+        <members>OpportunityTriggerSG</members>
+        <members>OpportunityTriggerT</members>
+        <members>OrderEventTrigger</members>
+        <members>PreventDuplicateAccounts</members>
+        <members>RestrictContactByName</members>
+        <members>TaskTrigger</members>
+        <members>TaskTriggerT</members>
+        <members>TriggerOnLead</members>
+        <members>UpdateAccountOpportunitySum</members>
+        <members>UpdateContactsMailingAddress</members>
+        <name>ApexTrigger</name>
     </types>
     <version>56.0</version>
 </Package>
