@@ -1,0 +1,151 @@
+<apex:page renderAs="pdf" standardStylesheets="false" docType="html-5.0" controller="TranscriptGradeReportController" showHeader="false" sidebar="false" action="{!getReportDetails}">
+    <html lang="en">
+    <head>
+        <title>School Profile</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                background-color: #e6e6e6;
+                color: #0c343d;
+                position: relative;
+                min-height: 100vh;
+                padding-bottom: 60px; /* Add padding to avoid content overlapping with footer */
+            }
+            h3 {
+                font-size: 50px;
+                margin: 0px 0px 25px;
+                color: #0c343d;
+            }
+            p {
+                font-size: 15px;
+                line-height: 30px;
+                color: #0c343d;
+                margin: 0px 0px 20px;
+            }
+            table {
+                width: 100%;
+                border-spacing: 0;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                line-height: 30px;
+            }
+            th {
+                width: 140px;
+            }
+            .header {
+                background-color: #fff;
+                padding: 20px;
+                margin-bottom: 20px;
+                text-align: left;
+                display: flex;
+                justify-content: space-between; /* Ensure header content is spaced properly */
+                align-items: center; /* Vertically center content */
+            }
+            .header img {
+                height: 60px;
+                margin-left: auto; /* Align the image to the right */
+            }
+            .content {
+                background-color: #fff;
+                padding: 20px;
+                margin-bottom: 60px; /* Ensure content area does not overlap with footer */
+            }
+            .footer {
+                background-color: #fff;
+                padding: 20px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background-color: #c8f0ed;
+                border-left: solid 1px #ace4e0;
+                color: #0c343d;
+                font-size: 9px;
+                line-height: 12px;
+                padding: 8px;
+            }
+            .signature img {
+                height: 50px;
+            }
+            .signature strong {
+                display: table;
+                text-align: right;
+                width: 100%;
+                color: #0c343d;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <span style="font-size: 18px;">
+                    Transcript
+                    <span style="display: block; font-size: 9px; color: #49d0c3; font-weight: 300;">{!AYear}</span>
+                </span>
+                <img src="{!$Resource.goaBottom}" />
+            </div>
+            <div class="content">
+                <table style="width:80%;">
+                    <tr>
+                        <th>Student:</th>
+                        <td>{!student}</td>
+                    </tr>
+                    <tr>
+                        <th>Teacher:</th>
+                        <td>{!teachers}</td>
+                    </tr>
+                    <tr>
+                        <th>School:</th>
+                        <td>{!School}</td>
+                    </tr>
+                    <tr>
+                        <th>Term:</th>
+                        <td>{!Term}</td>
+                    </tr>
+                    <tr>
+                        <th>Course:</th>
+                        <td>{!Course}</td>
+                    </tr>
+                    <tr>
+                        <th>Grade:</th>
+                        <td>{!Semester1Average}</td>
+                    </tr>
+                </table>
+                <p class="signature" style="text-align:right; margin:0px; padding:60px 20px 20px 0px;">
+                    <img src="{!$Resource.goaSignature}" style="height:50px;" />
+                    <strong>Michael Nachbar, Executive Director</strong>
+                </p>
+                <div>
+                    <h3>About</h3>
+                    <p style="font-size:10px;">Global Online Academy is a not-for-profit consortium of 100+ independent schools from around the world. Started by a group of independent schools looking to bring the benefits of online learning to their teachers and students, Global Online Academy prepares students for a global future by providing new, modern ways for students to learn and teachers to teach.</p>
+                    <p style="font-size:10px;padding-bottom: 22px;">The schools that are members of Global Online Academy are well known for the strengths of their curricula and the excellence of their teaching.</p>
+                    <h3>Mission</h3>
+                    <p style="font-size:10px;">GOA imagines a future where all students acquire and practice modern learning skills to be global citizens.</p>
+                    <p style="font-size:10px;">The mission of Global Online Academy is to reimagine learning to empower students and educators to thrive in a globally networked society. We deepen learning through courses that equip students with the knowledge, skills, and dispositions to be successful in high school, college, career, and life. We coach teachers to think differently about how they design student learning experiences. We work with educational leaders to ensure they have the strategies and tools to lead innovation and change.</p>
+                </div>
+                <div>
+                    <h3>Members Schools</h3>
+                    <p>The list of member schools will be dynamically populated here.</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    Executive Director: <strong>Michael Nachbar - <a href="mailto:michael.nachbar@globalonlineacademy.org" style="text-decoration:none; color: #0c343d;">michael.nachbar@globalonlineacademy.org</a></strong>
+                </p>
+                <p>
+                    14050 1st Avenue NE, Seattle, WA 98125-3099 206.368.3656
+                </p>
+            </div>
+        </main>
+    </body>
+    </html>
+</apex:page>

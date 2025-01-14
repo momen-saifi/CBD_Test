@@ -1,0 +1,23 @@
+<apex:page showHeader="false" sidebar="false" controller="VFPageRedirect">
+    <apex:includeLightning />
+    <div id="LightningComponentid"></div>
+
+    <script>
+        var inputValue = '{!inputValue}';  // Retrieve the parameter from Apex
+
+        // Log to confirm the inputValue is passed correctly
+        console.log('Received inputValue:', inputValue);
+
+        $Lightning.use("c:HelloLWCExampleApp", function() {
+            $Lightning.createComponent("c:helloComponentForVFLWC", 
+                { 
+                    inputValue: inputValue  // Pass inputValue to the LWC component
+                },
+                "LightningComponentid",
+                function(cmp) {
+                    console.log('LWC Component added in VF page');
+                    cmp.myMethod();  // Call the method in the LWC component
+                });
+        });
+    </script>
+</apex:page>
