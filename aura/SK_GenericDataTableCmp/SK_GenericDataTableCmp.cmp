@@ -1,0 +1,37 @@
+<aura:component controller="SK_GenericDataTableCmpController">
+    <ltng:require
+    styles="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+    scripts="https://code.jquery.com/jquery-3.6.4.min.js,
+             https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"
+    afterScriptsLoaded="{!c.doInit}"/>
+
+
+    <aura:attribute name="fieldsAPINameList" type="String[]" default="['ChangeDate', 'ChangeType', 'Description']" required="true"/>
+    <aura:attribute name="columnsLabelList" type="String[]" default="['Change Date', 'Change Type', 'Description']" required="true"/>
+    <aura:attribute name="objAPIname" type="String" default="Organization_Change" description="Object API name" required="true"/>
+    <aura:attribute name="sortingOrder" type="String" default="ChangeDate DESC" description="Specify the sorting order of records" required="false"/>
+    <aura:attribute name="filterCriteria" type="String" default="" description="Criteria to filter records on UI. Leave blank to display all records" required="false"/>
+    <aura:attribute name="linkField" type="String" default="" description="Field to link records" required="false"/>
+    <aura:attribute name="recordsLimit" type="String" default="9000" description="Number of records to display on UI" required="false"/>
+    <aura:attribute name="orgName" type="String" description="Selected Organization Name" required="true"/>
+
+    <!-- Section to show/hide spinner starts -->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <div class="slds-align--absolute-center">
+        <lightning:spinner aura:id="spinner" variant="brand" size="large" class="slds-hide"/>
+    </div>
+    <!-- /section to show/hide spinner ends -->
+
+    <div class="main-container">
+        <h2 class="table-title">Organizational Change Recordsg</h2>
+        <p class="table-description">The table below displays all recorded changes within the organization. You can filter or sort the records to find specific changes easily.</p>
+
+        <div id="tableDiv" class="table-responsive" style="width:100%; overflow: auto;"></div>
+        
+        <!-- Footer section with an export button -->
+        <div class="footer-buttons">
+            <lightning:button label="Export to Excel" onclick="{!c.exportToExcel}" class="slds-m-left_small"/>
+        </div>
+    </div>
+</aura:component>
