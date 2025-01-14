@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>momensaifi02@gmail.com</contactEmail>
+    <label>RMA Integration</label>
+    <oauthConfig>
+        <callbackUrl>https://mindful-impala-hepf54-dev-ed.trailblaze.my.salesforce.com/apex/CBD__OauthDemoRedirection</callbackUrl>
+        <consumerKey>3MVG9GCMQoQ6rpzSuV8Po7Tp3HtolRz_ruwFzdzR0VXMwtsAgLPycJvt20fdHTxYdTM3hedRwk8hklCnv1Cbk</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
