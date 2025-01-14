@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>User.PersonalInfo_EPIM</members>
-        <name>FieldSet</name>
+        <members>Account_Record_Page</members>
+        <members>Bike_Card</members>
+        <members>Broker_Record_Page</members>
+        <members>Campaign_Lightning_Page</members>
+        <members>Case_Record_Page</members>
+        <members>Contact_Record_Page</members>
+        <members>FlowsApp_UtilityBar</members>
+        <members>Home_Page_Default</members>
+        <members>Last_Page</members>
+        <members>Lead_Record_Page</members>
+        <members>LightningSalesConsole_UtilityBar</members>
+        <members>LightningSales_UtilityBar</members>
+        <members>LightningService_UtilityBar</members>
+        <members>Property_Explorer</members>
+        <members>Property_Finder</members>
+        <members>Property_Record_Page</members>
+        <members>SalesCloudMobile_UtilityBar</members>
+        <members>Settings</members>
+        <members>Support_Home_Page</members>
+        <members>Working_with_Data</members>
+        <members>Your_Bike_Selection</members>
+        <members>mode</members>
+        <members>model</members>
+        <members>test</members>
+        <name>FlexiPage</name>
     </types>
     <version>56.0</version>
 </Package>
