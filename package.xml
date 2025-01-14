@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Bike_Card</members>
-        <members>Broker__c</members>
-        <members>Favorite__c</members>
-        <members>Offer__c</members>
-        <members>Property_Explorer</members>
-        <members>Property_Finder</members>
-        <members>Property__c</members>
-        <members>Settings</members>
-        <members>Working_with_Data</members>
-        <members>Your_Bike_Selection</members>
-        <members>mode</members>
-        <members>model</members>
-        <members>test</members>
-        <name>CustomTab</name>
+        <members>Demo1</members>
+        <members>Salesforce_Demo1</members>
+        <name>ExperienceBundle</name>
     </types>
     <version>56.0</version>
 </Package>
