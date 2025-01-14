@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>CalculatorApp</members>
-        <members>CalculatorCmp</members>
-        <members>GetContactApp</members>
-        <members>GetContactCmp</members>
-        <members>HelloUser</members>
-        <members>HelloUserApp</members>
-        <members>MyContactList</members>
-        <members>SK_GenericDataTableCmp</members>
-        <members>SK_SetUpAuditTrailApp</members>
-        <members>SK_SetUpAuditTrailCmp</members>
-        <members>auraPropertyListMap</members>
-        <members>forgotPassword</members>
-        <members>loginForm</members>
-        <members>pageTemplate_2_7_3</members>
-        <members>selfRegister</members>
-        <members>setExpId</members>
-        <members>setStartUrl</members>
-        <name>AuraDefinitionBundle</name>
+        <members>Bike_Card</members>
+        <members>Broker__c</members>
+        <members>Favorite__c</members>
+        <members>Offer__c</members>
+        <members>Property_Explorer</members>
+        <members>Property_Finder</members>
+        <members>Property__c</members>
+        <members>Settings</members>
+        <members>Working_with_Data</members>
+        <members>Your_Bike_Selection</members>
+        <members>mode</members>
+        <members>model</members>
+        <members>test</members>
+        <name>CustomTab</name>
     </types>
     <version>56.0</version>
 </Package>
