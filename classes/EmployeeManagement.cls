@@ -75,6 +75,7 @@ public with sharing class EmployeeManagement {
         }
         return totalSalary;
     }
+    //my name is vishu
 
     /**
      * Retrieves employees in a specific department.
@@ -88,5 +89,6 @@ public with sharing class EmployeeManagement {
         }
         return deptEmployees;
     }
-    ///vikash upadhyay 123456789087876868768
+    ///vikash upadhyay 123456789087876868768 vishu123456
+    
 }

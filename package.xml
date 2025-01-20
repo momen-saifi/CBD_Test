@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Case.ChangePriorityToHigh</members>
-        <name>WorkflowFieldUpdate</name>
+        <members>EmployeeManagement</members>
+        <members>EmployeeManagementTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>student__c.Month_of_dob__c</members>
+        <members>student__c.roll_no__c</members>
+        <members>student__c.student_addres__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Parent__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>student__c-student pagelayout</members>
+        <name>Layout</name>
     </types>
     <version>56.0</version>
 </Package>
