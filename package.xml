@@ -1,41 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>EnablementDashboardReports_sfdcSESv60/Exercise_Completion_Status_by_Section_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Exercise_Completion_Status_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Exercise_Completion_by_Days_to_Complete_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Exercise_Completion_by_User_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Milestone_Completion_Status_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Milestone_Progress_by_User_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Milestone_Progress_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Outcome_Progress_by_User_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Outcome_Progress_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Program_Exercises_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Program_Milestones_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv60/Program_Overview_by_User_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Exercise_Completion_Status_by_Section_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Exercise_Completion_Status_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Exercise_Completion_by_Days_to_Complete_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Exercise_Completion_by_User_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Milestone_Completion_Status_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Milestone_Progress_by_User_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Milestone_Progress_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Outcome_Progress_by_User_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Outcome_Progress_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Program_Exercises_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Program_Milestones_sfdcSESv61</members>
-        <members>EnablementDashboardReports_sfdcSESv61/Program_Overview_by_User_sfdcSESv61</members>
-        <name>Report</name>
-    </types>
-    <types>
-        <members>EBotR_v3</members>
-        <members>EBotR_v4</members>
-        <members>EBotR_v5</members>
-        <members>EinsteinBotReports</members>
-        <members>EinsteinBotReports_v2</members>
-        <members>EnablementDashboardReports_sfdcSESv60</members>
-        <members>EnablementDashboardReports_sfdcSESv61</members>
-        <name>ReportFolder</name>
+        <members>Program_Definition_sfdcSESv60</members>
+        <members>Program_Definition_sfdcSESv61</members>
+        <members>Program_Progress_sfdcSESv60</members>
+        <members>Program_Progress_sfdcSESv61</members>
+        <members>Program_Task_Progress_sfdcSESv60</members>
+        <members>Program_Task_Progress_sfdcSESv61</members>
+        <members>flow_orchestration_log_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_run_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_stage_run_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_step_run_ootb_crt_two_four_eight</members>
+        <members>flow_orchestration_work_item_ootb_crt_two_four_eight</members>
+        <members>screen_flows_prebuilt_crt</members>
+        <name>ReportType</name>
     </types>
     <version>56.0</version>
 </Package>
