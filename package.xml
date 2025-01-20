@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Parent__c.phone_field_should_not_be_blank</members>
-        <members>college__c.phone_field_should_not_be_blank_or_alph</members>
-        <members>student__c.Name_field_should_not_be_blank_and_no</members>
-        <members>student__c.Phonefiledvalidationrule</members>
-        <members>student__c.class_filed_should_be_blank</members>
-        <members>student__c.student_field_shoul_not_be_blank_or_numb</members>
-        <name>ValidationRule</name>
+        <members>Case.ChangePriorityToHigh</members>
+        <name>WorkflowFieldUpdate</name>
     </types>
     <version>56.0</version>
 </Package>
