@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <fullName>JUNIOR</fullName>
+        <active>true</active>
+        <label>JUNIOR</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SENIOR</fullName>
+        <active>true</active>
+        <label>SENIOR</label>
+    </recordTypes>
+</CustomObject>
