@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <recordTypes>
-        <fullName>JUNIOR</fullName>
+    <validationRules>
+        <fullName>Name_field_should_not_be_blank_and_no</fullName>
+        <active>false</active>
+        <description>Name should not be blank and no</description>
+        <errorConditionFormula>OR( ISBLANK( Name ) , ISNUMBER( Name ))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>field should not be blank and no</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Phonefiledvalidationrule</fullName>
         <active>true</active>
-        <label>JUNIOR</label>
-    </recordTypes>
-    <recordTypes>
-        <fullName>SENIOR</fullName>
-        <active>true</active>
-        <label>SENIOR</label>
-    </recordTypes>
+        <errorConditionFormula>LEN(student_phone_no__c)  &lt;&gt;  10</errorConditionFormula>
+        <errorMessage>Phone should be 10 digit only.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>class_filed_should_be_blank</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( ISPICKVAL(students_class__c ,&quot;&quot;) ,RecordType.DeveloperName  = &quot;SENIOR&quot;)</errorConditionFormula>
+        <errorMessage>student class should not be blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>student_field_shoul_not_be_blank_or_numb</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR( ISBLANK( student_addres__c ) , ISNUMBER( student_addres__c ) )</errorConditionFormula>
+        <errorMessage>addressfiled should not be blank or no</errorMessage>
+    </validationRules>
 </CustomObject>
