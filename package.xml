@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Enablement_sfdcSESv60/Program_Dashboard_sfdcSESv60</members>
-        <members>Enablement_sfdcSESv61/Program_Dashboard_sfdcSESv61</members>
-        <name>Dashboard</name>
-    </types>
-    <types>
-        <members>Enablement_sfdcSESv60</members>
-        <members>Enablement_sfdcSESv61</members>
-        <name>DashboardFolder</name>
+        <members>enablement/sfdcEnablement_EnablementWorkspace</members>
+        <name>DigitalExperienceBundle</name>
     </types>
     <version>56.0</version>
 </Package>
