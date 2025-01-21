@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <alerts>
-        <fullName>email_field_update</fullName>
-        <description>email field update</description>
+    <fieldUpdates>
+        <fullName>approved</fullName>
+        <field>status__c</field>
+        <literalValue>approved</literalValue>
+        <name>approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
-        <recipients>
-            <recipient>vikash.semykolon@gmail.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/abcds</template>
-    </alerts>
-    <alerts>
-        <fullName>festival_wish</fullName>
-        <description>festival wish</description>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>in_progres</fullName>
+        <field>status__c</field>
+        <literalValue>in progress</literalValue>
+        <name>in progres</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
         <protected>false</protected>
-        <recipients>
-            <recipient>vikash.semykolon@gmail.com</recipient>
-            <type>user</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Festival_wishes</template>
-    </alerts>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>in_progreses</fullName>
+        <field>status__c</field>
+        <literalValue>in progress</literalValue>
+        <name>in progreses</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>in_progress</fullName>
+        <field>status__c</field>
+        <literalValue>in progress</literalValue>
+        <name>in progress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>rejected</fullName>
+        <field>status__c</field>
+        <literalValue>rejeact</literalValue>
+        <name>rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
 </Workflow>
