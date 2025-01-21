@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Case.LogACall</members>
-        <members>Case.NewChildCase</members>
-        <members>CollaborationGroup.NewGroupMember</members>
-        <members>CollaborationGroup.NewGroupRecord</members>
-        <members>FeedItem.NewTaskFromFeedItem</members>
-        <members>GuestCommunityCase</members>
-        <members>LogACall</members>
-        <members>NewAccount</members>
-        <members>NewCase</members>
-        <members>NewCommunityCase</members>
-        <members>NewContact</members>
-        <members>NewEvent</members>
-        <members>NewGroup</members>
-        <members>NewLead</members>
-        <members>NewNote</members>
-        <members>NewOpportunity</members>
-        <members>NewTask</members>
-        <members>SendEmail</members>
-        <members>Task.Defer</members>
-        <members>Task.EditDescription</members>
-        <members>Task.UpdatePriority</members>
-        <members>Task.UpdateStatus</members>
-        <name>QuickAction</name>
+        <members>Parent__c</members>
+        <members>Timesheet__c</members>
+        <members>addidas__c</members>
+        <members>college__c</members>
+        <members>company__c</members>
+        <name>SharingRules</name>
     </types>
     <version>56.0</version>
 </Package>
