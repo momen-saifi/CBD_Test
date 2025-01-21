@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>CBD__Deployment__c.Approval</members>
-        <members>CBD__Deployment__c.Rejected</members>
-        <members>Case.ChangePriorityToHigh</members>
-        <members>addidas__c.fieldsupdate</members>
-        <members>employe__c.approved</members>
-        <members>employe__c.in_progres</members>
-        <members>employe__c.in_progreses</members>
-        <members>employe__c.in_progress</members>
-        <members>employe__c.rejected</members>
-        <members>student__c.approved</members>
-        <members>student__c.in_progress</members>
-        <members>student__c.rejected</members>
-        <members>student__c.text</members>
-        <members>student__c.update_city</members>
-        <members>student__c.update_state</members>
-        <name>WorkflowFieldUpdate</name>
+        <members>AnswersHome</members>
+        <members>BandwidthExceeded</members>
+        <members>ChangePassword</members>
+        <members>CommunitiesLanding</members>
+        <members>CommunitiesLogin</members>
+        <members>CommunitiesSelfReg</members>
+        <members>CommunitiesSelfRegConfirm</members>
+        <members>CommunitiesTemplate</members>
+        <members>Exception</members>
+        <members>FileNotFound</members>
+        <members>ForgotPassword</members>
+        <members>ForgotPasswordConfirm</members>
+        <members>IdeasHome</members>
+        <members>InMaintenance</members>
+        <members>MicrobatchSelfReg</members>
+        <members>MyProfilePage</members>
+        <members>SiteLogin</members>
+        <members>SiteRegister</members>
+        <members>SiteRegisterConfirm</members>
+        <members>SiteTemplate</members>
+        <members>StdExceptionTemplate</members>
+        <members>Unauthorized</members>
+        <members>UnderConstruction</members>
+        <name>ApexPage</name>
     </types>
     <version>56.0</version>
 </Package>
