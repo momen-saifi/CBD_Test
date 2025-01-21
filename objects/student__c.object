@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <recordTypes>
-        <fullName>SENIOR</fullName>
-        <active>true</active>
-        <label>SENIOR</label>
-    </recordTypes>
+    <fields>
+        <fullName>TOTAL_MARKS__c</fullName>
+        <externalId>false</externalId>
+        <formula>ENGLISH__c  +  ART__c  +  HINDI__c  +  MATHS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TOTAL MARKS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>student_phone_no__c</fullName>
+        <externalId>false</externalId>
+        <label>student phone no</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
 </CustomObject>

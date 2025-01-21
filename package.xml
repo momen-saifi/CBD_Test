@@ -10,28 +10,40 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>addidas__c.Branch_phone_no__c</members>
-        <members>addidas__c.CITY__c</members>
-        <members>addidas__c.distric__c</members>
-        <members>addidas__c.email__c</members>
+        <members>Account.Active__c</members>
+        <members>Account.Billing_city__c</members>
+        <members>Account.CustomerPriority__c</members>
+        <members>Account.Latestoppamount__c</members>
+        <members>Account.Match_Billing_Address__c</members>
+        <members>Account.NumberofLocations__c</members>
+        <members>Account.SLAExpirationDate__c</members>
+        <members>Account.SLASerialNumber__c</members>
+        <members>Account.SLA__c</members>
+        <members>Account.Total_amount__c</members>
+        <members>Account.UpsellOpportunity__c</members>
+        <members>Account.billingpostelcode__c</members>
+        <members>Account.copyBillingtoMailing__c</members>
+        <members>Account.email__c</members>
+        <members>Account.latestcasenumber__c</members>
+        <members>Account.shippingpostelcode__c</members>
+        <members>Account.total_contact__c</members>
+        <members>Parent__c.student_count__c</members>
+        <members>addidas__c.state__c</members>
+        <members>college__c.branches__c</members>
+        <members>student__c.TOTAL_MARKS__c</members>
+        <members>student__c.student_phone_no__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>addidas__c</members>
-        <members>company__c</members>
-        <members>employe__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>ParentPhoneNumberOnStudent</members>
+        <members>Birthdayscheduletriggerflow</members>
         <name>Flow</name>
     </types>
     <types>
-        <members>student__c-student pagelayout</members>
+        <members>employe__c-employe Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>student__c.SENIOR</members>
+        <members>employe__c.Regular_employe</members>
         <name>RecordType</name>
     </types>
     <version>56.0</version>
