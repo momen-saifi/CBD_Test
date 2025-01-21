@@ -1,0 +1,6 @@
+<aura:component >
+    Enter a Number :<ui:inputText aura:Id="inputcmp"/>
+    <br/>
+    <lightning:button label="submit" onclick="{!c.doAction}"/>
+    
+</aura:component>
