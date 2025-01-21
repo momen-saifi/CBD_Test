@@ -1,0 +1,32 @@
+<aura:component controller="accountcontroler">
+    <aura:attribute name="acclist" type="Account"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <h5 style="font-size:20px">List of accounts.</h5>
+    <table border="2">
+        <thead>
+    <tr class="slds-line-height_reset">
+      <th class="" scope="col">
+        <div class="slds-truncate" title=" Name"> Name</div>
+      </th>
+      <th class="" scope="col">
+        <div class="slds-truncate" title="Phone">Phone</div>
+      </th>
+      <th class="" scope="col">
+        <div class="slds-truncate" title="email__c">email__c</div>
+      </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.acclist}" var="acc">
+            <tr>
+                <td>{!acc.Name}
+                </td>
+                <td>{!acc.Phone}
+                </td>
+                <td>{!acc.email__c}
+                </td>
+            </tr>
+            </aura:iteration>
+        </tbody>
+    </table>        
+</aura:component>
