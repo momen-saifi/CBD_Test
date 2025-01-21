@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>prm_channel_dashboard_folder/prm_channel_sales_dashboard</members>
-        <members>prm_spring24_dashboardsSPLIT1707586514824/prm_spring24_ch_marketing_dashboardSPLIT1707586514824</members>
-        <members>prm_winter24_dashboardsSPLIT1707586514824/cmc_spring_24_cmc_home_dashboard</members>
-        <name>Dashboard</name>
-    </types>
-    <types>
-        <members>prm_ch_dashboards_sub_folder</members>
-        <members>prm_channel_dashboard_folder</members>
-        <members>prm_spring24_dashboardsSPLIT1707586514824</members>
-        <members>prm_winter24_dashboardsSPLIT1707586514824</members>
-        <name>DashboardFolder</name>
+        <members>Demo_community1</members>
+        <name>ExperienceBundle</name>
     </types>
     <version>56.0</version>
 </Package>
