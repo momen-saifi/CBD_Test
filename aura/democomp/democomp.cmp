@@ -1,0 +1,8 @@
+<aura:component >
+    <c:democomp1/>
+    <br></br>
+	<h1>This is my first lightning component.</h1>
+    <hr>
+    <p>This is my first lightning paragraph.</p>
+    </hr>
+</aura:component>

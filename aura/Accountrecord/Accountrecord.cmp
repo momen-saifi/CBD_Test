@@ -1,0 +1,171 @@
+<aura:component controller="Accountdetailscontroler" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+ <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+     <aura:attribute name="acclist" type="Account[]"/>
+    <aura:attribute name="showModal" type="String" default=""/>
+     <aura:attribute name="showEditModal" type="String" default=""/>
+    <aura:attribute name="recordId" type="String" default=""/>
+    <aura:attribute name="Emaillist" type="List" default=""/>
+    <aura:attribute name="errorMsg" type="String" default=""/>
+    <aura:attribute name="isSelectAll" type="boolean" default="false"/>
+    <!-- pageination attributes-->
+    
+    <aura:attribute name="PageNumber" type="integer" default="1"/>
+    <aura:attribute name="TotalPages" type="integer" default="0"/>
+    <aura:attribute name="TotalRecords" type="integer" default="0"/>
+    <aura:attribute name="RecordStart" type="integer" default="0"/>
+    <aura:attribute name="RecordEnd" type="integer" default="0"/>
+    
+    <div class="slds-m-around_xx-large">
+        
+        <br/>
+        <div class="slds-float_right">
+            <ui:inputSelect aura:id="pageSize" label="Display Records Per Page: " change="{!c.onSelectChange}">
+                <ui:inputSelectOption text="10" label="10" value="true"/>
+                <ui:inputSelectOption text="15" label="15"/>
+                <ui:inputSelectOption text="20" label="20"/>
+                <ui:inputSelectOption text="30" label="30"/>
+            </ui:inputSelect>
+            <br/>
+        </div>
+    </div>
+    
+    
+    <aura:if isTrue="{!v.errorMsg}">
+        <div class="slds-notify slds-notify_alert slds-alert_warning" role="alert">
+            <span class="slds-assistive-text">error</span>
+            <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small" title="Description of icon when needed">
+            </span>
+            <h2>{!v.errorMsg}
+                
+            </h2>
+            <div class="slds-notify__close">
+                <button class="slds-button slds-button_icon slds-button_icon-small slds-button_icon-inverse" title="Close">
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+            </div>
+        </div>
+    </aura:if>
+    
+    <button  class="slds-align_absolute-center"  variant="brand"  type="button" label="Updated"  onclick="{!c.SendEmail}" > SendEmail</button>
+    <br/>
+     <table aria-multiselectable="true" class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols" role="grid" aria-label="Example advanced table of Opportunities in actionable mode with all rows selected">
+  <thead>
+    <tr class="slds-line-height_reset">
+      <th class="slds-text-align_right slds-cell_action-mode" scope="col" style="width:3.25rem">
+        <span id="column-group-header" class="slds-assistive-text">Choose a row</span>
+        <div class="slds-th__action slds-th__action_form">
+          <div class="slds-checkbox">
+            <input type="checkbox" name="options" id="checkbox-unique-id-345" value="checkbox-unique-id-345" tabindex="0" aria-labelledby="check-select-all-label column-group-header" checked="" onclick="{!c.selectAll}"/>
+            <label class="slds-checkbox__label" for="checkbox-unique-id-345" id="check-select-all-label">
+              <span class="slds-checkbox_faux"></span>
+              <span class="slds-form-element__label slds-assistive-text" >Select All </span>
+            </label>
+          </div>
+        </div>
+      </th>
+      <th aria-label=" Account Name" aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+        <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+          <span class="slds-assistive-text">Sort by: </span>
+          <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+            <span class="slds-truncate" title="Name">Account Name</span>
+            <span class="slds-icon_container slds-icon-utility-arrowdown">
+              
+            </span>
+          </div>
+        </a>
+        <div class="slds-resizable">
+          <input type="range" aria-label="Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-624" max="1000" min="20" tabindex="0" />
+          <span class="slds-resizable__handle">
+            <span class="slds-resizable__divider"></span>
+          </span>
+        </div>
+      </th>
+      <th aria-label="Email" aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+        <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+          <span class="slds-assistive-text">Sort by: </span>
+          <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+            <span class="slds-truncate" title="Email">Email</span>
+            <span class="slds-icon_container slds-icon-utility-arrowdown">
+              
+            </span>
+          </div>
+        </a>
+        <div class="slds-resizable">
+          <input type="range" aria-label="Account Name column width" class="slds-resizable__input slds-assistive-text" id="cell-resize-handle-625" max="1000" min="20" tabindex="0" />
+          <span class="slds-resizable__handle">
+            <span class="slds-resizable__divider"></span>
+          </span>
+        </div>
+      </th>
+      <th aria-label="Action" aria-sort="none" class="slds-is-resizable slds-is-sortable slds-cell_action-mode" scope="col">
+        <a class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="0">
+          <span class="slds-assistive-text">Sort by: </span>
+          <div class="slds-grid slds-grid_vertical-align-center slds-has-flexi-truncate">
+            <span class="slds-truncate" title="Action">Action</span>
+            <span class="slds-icon_container slds-icon-utility-arrowdown">
+             
+            </span>
+          </div>
+        </a>
+          
+        </th>
+      </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.acclist}" var="acc">
+                <tr>
+                    <td>
+                      <input type="checkbox" name="options" id="checkbox-unique-id-345" value=""  tabindex="0" aria-labelledby="check-select-all-label column-group-header" checked=""   data-record="{!acc.email__c}"  onclick="{!c.onchangeData}" /> 
+                        
+                    </td>
+                    <td>{!acc.Name}
+                    </td>
+                    <td>{!acc.email__c}
+                    </td>
+                    <td>{!acc.Action}
+                    </td>
+                    <td>
+                        <button    data-record="{!acc.Id}" variant="brand"  type="button" label="Updated"  onclick="{!c.updateStatus}" > Updated</button>
+                         <button   data-record="{!acc.Id}" variant="brand"  type="button" label="Deleted"  onclick="{!c.deleteAccountRecord}" > Deleted</button>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+    
+     <div class="slds-clearfix">
+            <div class="slds-page-header" role="banner">
+                <div class="slds-float_right">            
+                    <lightning:button  variant="brand" aura:id="prevPage" label="Prev" onclick="{!c.handlePrev}" />            
+                    <lightning:button  aura:id="nextPage" variant="brand" label="Next" onclick="{!c.handleNext}"/>
+                </div>
+                <p class="slds-page-header__title">{!v.RecordStart}-{!v.RecordEnd} of {!v.TotalRecords} | Page {!v.PageNumber} of {!v.TotalPages}</p>
+            </div>
+        </div>
+    
+    <aura:if isTrue="{!v.showModal}">
+        
+        <section role="dialog" tabindex="-1" aria-modal="true" aria-label="Meaningful description of the modal content" class="slds-modal slds-fade-in-open">
+  <div class="slds-modal__container">
+    <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
+        <lightning:recordEditForm recordId="{!v.recordId}" objectApiName="Account"
+                              onsuccess="{!c.handleSuccess}"    
+                                  >
+            <lightning:messages />
+            <lightning:inputField fieldName="email__c" />
+            <lightning:button class="slds-m-top_small, slds-m-bottom_small" variant="brand" type="submit" label="Submit"  />
+        </lightning:recordEditForm>
+      </div>
+    <div class="slds-modal__footer">
+      <button class="slds-button slds-button_neutral" aria-label="Cancel and close"  onclick="{!c.closePopup}">Cancel</button>
+    </div>
+  </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+        
+    </aura:if>
+    
+    
+    
+	
+</aura:component>

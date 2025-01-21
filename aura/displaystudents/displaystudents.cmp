@@ -1,0 +1,37 @@
+<aura:component controller="studentcontroler">>
+    <aura:attribute name="stdlist" type="student__c"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <h1>Lists of students</h1>
+    <table border="2">
+    <thead>
+        <tr class="slds-line-height_reset">
+      <th class="" scope="col">
+        <div class="slds-truncate" title="Name"> Name</div>
+      </th>
+      <th class="" scope="col">
+        <div class="slds-truncate" title="studentPhoneNo">studentPhoneNo</div>
+      </th>
+      <th class="" scope="col">
+        <div class="slds-truncate" title="Email">Email</div>
+            </th>
+            <th class="" scope="col">
+        <div class="slds-truncate" title="ParentPhoneNo">ParentPhoneNo</div>
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.stdlist}" var="std">
+            <tr>
+                <td>{!std.Name}
+                </td>
+                <td>{!std.student_phone_no__c}
+                </td>
+                <td>{!std.email__c}
+                </td>
+                <td>{!std.parent_phone_no__c}
+                </td>
+            </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

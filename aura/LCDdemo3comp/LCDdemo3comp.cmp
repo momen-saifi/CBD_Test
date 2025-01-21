@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="message1" type="string"/>
+    <aura:attribute name="message2" type="string"/>
+    Button 1:{!v.message1}
+    <br></br>
+    
+    <lightning:button label="clickme" onclick="{!c.handleclick}"/>
+    <hr/>
+    Button 2:{!v.message2}
+    <br></br>
+    <lightning:button label="clickMeAsWell" onclick="{!c.anotherhandleclick}"/>
+</aura:component>

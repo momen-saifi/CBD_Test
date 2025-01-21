@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name="var1" type="string" default="test value"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="arraydemo" type="string[]"
+                    default="['v1','v2','v3']"/>
+    <aura:attribute name="Listdemo" type="list"
+                    default="{'list1','list2','list3',}"/>
+    <aura:attribute name="userdata" type="LCDdemoWrapper.WrapperTest"/>
+   
+   
+     Array value:   {!v.arraydemo[0]} {!v.arraydemo[1]} {!v.arraydemo[2]}
+    <hr/>
+        List values:{!v.Listdemo[1]} {!v.Listdemo[2]}
+    <hr/>
+    wrapper values:{!v.userdata.myString1}-{!v.userdata.myInteger1}
+        
+  
+    
+</aura:component>
