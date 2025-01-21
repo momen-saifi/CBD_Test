@@ -1,33 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <fullName>Month_of_dob__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT( MONTH( DOB__c ) )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Month of dob</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>roll_no__c</fullName>
-        <externalId>false</externalId>
-        <label>roll no</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>student_addres__c</fullName>
-        <externalId>false</externalId>
-        <label>student addres</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
+    <recordTypes>
+        <fullName>SENIOR</fullName>
+        <active>true</active>
+        <label>SENIOR</label>
+    </recordTypes>
 </CustomObject>
