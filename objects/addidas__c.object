@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <fullName>state__c</fullName>
+        <fullName>employe__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>state</label>
+        <label>employe</label>
+        <referenceTo>employe__c</referenceTo>
+        <relationshipLabel>addidass</relationshipLabel>
+        <relationshipName>addidass</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>DELHI</fullName>
-                    <default>false</default>
-                    <label>DELHI</label>
-                </value>
-                <value>
-                    <fullName>UP</fullName>
-                    <default>false</default>
-                    <label>UP</label>
-                </value>
-                <value>
-                    <fullName>HARIYANA</fullName>
-                    <default>false</default>
-                    <label>HARIYANA</label>
-                </value>
-                <value>
-                    <fullName>MUMBAI</fullName>
-                    <default>false</default>
-                    <label>MUMBAI</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <type>Lookup</type>
     </fields>
 </CustomObject>
