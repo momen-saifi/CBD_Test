@@ -1,0 +1,19 @@
+.slds-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.slds-table th, .slds-table td {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+/* Alternate row colors */
+.slds-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Light grey for odd rows */
+}
+
+.slds-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;;
+	 /* White for even rows */
+}

@@ -5,7 +5,7 @@ public class EmployeeManagementTest {
         EmployeeManagement.addEmployee('1', 'John Doe', 5000, 'IT');
         System.assertEquals('John Doe', EmployeeManagement.getEmployee('1').name);
     }
-
+//modife by vikash .
     @isTest
     static void testAddDuplicateEmployee() {
         EmployeeManagement.addEmployee('2', 'Jane Smith', 6000, 'HR');

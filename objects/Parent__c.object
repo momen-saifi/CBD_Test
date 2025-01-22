@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <fullName>student_count__c</fullName>
+        <fullName>Parent_address__c</fullName>
         <externalId>false</externalId>
-        <label>student count</label>
-        <summaryForeignKey>student__c.Parent__c</summaryForeignKey>
-        <summaryOperation>count</summaryOperation>
+        <label>Parent address</label>
+        <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Summary</type>
+        <type>TextArea</type>
     </fields>
 </CustomObject>
