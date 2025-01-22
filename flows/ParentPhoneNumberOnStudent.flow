@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>assign_phone_number</name>
+        <label>assign phone number</label>
+        <locationX>449</locationX>
+        <locationY>241</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.parent_phone_no__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_Parent_Record.Parent_phone_no__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Parent_Phone_Populate</name>
+        <label>Parent Phone Populate</label>
+        <locationX>440</locationX>
+        <locationY>48</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Phone_number_populate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Parent__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Parent__r.Parent_phone_no__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_Parent_Record</targetReference>
+            </connector>
+            <label>Phone number populate</label>
+        </rules>
+    </decisions>
+    <description>Student&apos;s parent phone number automatically updated on student record when record is created or updated.</description>
+    <environments>Default</environments>
+    <interviewLabel>ParentPhoneNumberOnStudent {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ParentPhoneNumberOnStudent</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>get_Parent_Record</name>
+        <label>get Parent Record</label>
+        <locationX>657</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>assign_phone_number</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Parent__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Parent__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>32</locationX>
+        <locationY>33</locationY>
+        <connector>
+            <targetReference>Parent_Phone_Populate</targetReference>
+        </connector>
+        <object>student__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>
