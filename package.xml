@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>Calculator</members>
+        <members>CalculatorTest</members>
         <members>EmployeeManagement</members>
         <members>EmployeeManagementTest</members>
+        <members>ProjectManagement</members>
+        <members>ProjectManagementTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>democomp</members>
-        <members>democomp1</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>Parent__c.Parent_address__c</members>
-        <members>addidas__c.employe__c</members>
-        <members>company__c.total_income__c</members>
-        <members>student__c.monthly_leave__c</members>
+        <members>Teacher__c.address__c</members>
+        <members>company__c.company_mail_id__c</members>
+        <members>employe__c.status__c</members>
+        <members>student__c.HINDI__c</members>
+        <members>student__c.MATHS__c</members>
+        <members>student__c.Parent__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>company__c-company Layout</members>
+        <members>ParentPhoneNumberOnStudent</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>employe__c-employe Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>ffcInvoices</members>
+        <members>ffc_Invoicetable</members>
         <name>LightningComponentBundle</name>
     </types>
     <version>56.0</version>

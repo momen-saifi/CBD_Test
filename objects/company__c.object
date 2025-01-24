@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <fullName>total_income__c</fullName>
+        <fullName>company_mail_id__c</fullName>
         <externalId>false</externalId>
-        <formula>company_feb_month_income__c  +  company_jan_month_income__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>total income</label>
-        <precision>18</precision>
+        <label>company mail id</label>
         <required>false</required>
-        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Number</type>
+        <type>Email</type>
         <unique>false</unique>
     </fields>
 </CustomObject>
