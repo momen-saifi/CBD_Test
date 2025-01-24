@@ -10,32 +10,16 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>Account.Active__c</members>
-        <members>Account.Billing_city__c</members>
-        <members>Account.CustomerPriority__c</members>
-        <members>Account.Latestoppamount__c</members>
-        <members>Account.Match_Billing_Address__c</members>
-        <members>Account.NumberofLocations__c</members>
-        <members>Account.SLAExpirationDate__c</members>
-        <members>Account.SLASerialNumber__c</members>
-        <members>Account.SLA__c</members>
-        <members>Account.Total_amount__c</members>
-        <members>Account.UpsellOpportunity__c</members>
-        <members>Account.billingpostelcode__c</members>
-        <members>Account.copyBillingtoMailing__c</members>
-        <members>Account.email__c</members>
-        <members>Account.latestcasenumber__c</members>
-        <members>Account.shippingpostelcode__c</members>
-        <members>Account.total_contact__c</members>
-        <members>Parent__c.student_count__c</members>
-        <members>addidas__c.state__c</members>
-        <members>college__c.branches__c</members>
-        <members>student__c.TOTAL_MARKS__c</members>
-        <members>student__c.student_phone_no__c</members>
+        <members>Teacher__c.address__c</members>
+        <members>company__c.company_mail_id__c</members>
+        <members>employe__c.status__c</members>
+        <members>student__c.HINDI__c</members>
+        <members>student__c.MATHS__c</members>
+        <members>student__c.Parent__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Birthdayscheduletriggerflow</members>
+        <members>ParentPhoneNumberOnStudent</members>
         <name>Flow</name>
     </types>
     <types>
@@ -43,8 +27,8 @@
         <name>Layout</name>
     </types>
     <types>
-        <members>employe__c.Regular_employe</members>
-        <name>RecordType</name>
+        <members>ffc_Invoicetable</members>
+        <name>LightningComponentBundle</name>
     </types>
     <version>56.0</version>
 </Package>
