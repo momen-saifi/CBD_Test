@@ -10,25 +10,31 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>Teacher__c.address__c</members>
-        <members>company__c.company_mail_id__c</members>
-        <members>employe__c.status__c</members>
-        <members>student__c.HINDI__c</members>
-        <members>student__c.MATHS__c</members>
-        <members>student__c.Parent__c</members>
+        <members>college__c.state__c</members>
+        <members>college__c.teachers_count__c</members>
+        <members>company__c.Company_number__c</members>
+        <members>student__c.state__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>ParentPhoneNumberOnStudent</members>
+        <members>Teacher__c</members>
+        <members>Timesheet__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Timesheet__c</members>
+        <members>company__c</members>
+        <members>employe__c</members>
+        <members>student__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>parent_phone_trigger_flow</members>
         <name>Flow</name>
     </types>
     <types>
-        <members>employe__c-employe Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>ffc_Invoicetable</members>
-        <name>LightningComponentBundle</name>
+        <members>sfdc_chatbot_service_permset</members>
+        <name>PermissionSet</name>
     </types>
     <version>56.0</version>
 </Package>

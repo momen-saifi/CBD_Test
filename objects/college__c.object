@@ -29,4 +29,13 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>teachers_count__c</fullName>
+        <externalId>false</externalId>
+        <label>teachers count</label>
+        <summaryForeignKey>Teacher__c.college__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
 </CustomObject>
