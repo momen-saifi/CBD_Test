@@ -143,168 +143,46 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>This is data record for the teachers.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Language__c</fullName>
+        <fullName>Date__c</fullName>
         <externalId>false</externalId>
-        <label>Language</label>
+        <label>Date</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>MultiselectPicklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>HINDI</fullName>
-                    <default>false</default>
-                    <label>HINDI</label>
-                </value>
-                <value>
-                    <fullName>ENGLISH</fullName>
-                    <default>false</default>
-                    <label>ENGLISH</label>
-                </value>
-                <value>
-                    <fullName>MARATHI</fullName>
-                    <default>false</default>
-                    <label>MARATHI</label>
-                </value>
-                <value>
-                    <fullName>PUNJABI</fullName>
-                    <default>false</default>
-                    <label>PUNJABI</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-        <visibleLines>4</visibleLines>
+        <type>Date</type>
     </fields>
     <fields>
-        <fullName>Last_Name__c</fullName>
+        <fullName>Hours_Logged__c</fullName>
         <externalId>false</externalId>
-        <label>Last Name</label>
-        <length>30</length>
+        <label>Hours Logged</label>
+        <length>18</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Teacher_id_no__c</fullName>
-        <externalId>false</externalId>
-        <label>Teacher id no</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Teacher_mail__c</fullName>
-        <externalId>false</externalId>
-        <label>Teacher mail</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Teacher_phone_no__c</fullName>
-        <externalId>false</externalId>
-        <label>Teacher phone no</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Phone</type>
-    </fields>
-    <fields>
-        <fullName>Teacher_sellery__c</fullName>
-        <externalId>false</externalId>
-        <label>Teacher sellery</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>address__c</fullName>
-        <externalId>false</externalId>
-        <label>address</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>college__c</fullName>
-        <externalId>false</externalId>
-        <label>college</label>
-        <referenceTo>college__c</referenceTo>
-        <relationshipLabel>Teachers</relationshipLabel>
-        <relationshipName>Teachers</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
-        <fullName>subjacts__c</fullName>
-        <externalId>false</externalId>
-        <label>subjacts</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>HINDI</fullName>
-                    <default>false</default>
-                    <label>HINDI</label>
-                </value>
-                <value>
-                    <fullName>ENGLISH</fullName>
-                    <default>false</default>
-                    <label>ENGLISH</label>
-                </value>
-                <value>
-                    <fullName>MATHS</fullName>
-                    <default>false</default>
-                    <label>MATHS</label>
-                </value>
-                <value>
-                    <fullName>ART</fullName>
-                    <default>false</default>
-                    <label>ART</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <label>Teacher</label>
+    <label>Timesheet</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Teacher Name</label>
+        <label>Timesheet Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Teachers</pluralLabel>
+    <pluralLabel>Timesheets</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
